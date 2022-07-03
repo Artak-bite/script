@@ -18,7 +18,7 @@ you can check links and connection with php to mysql using "localhost" and "loca
     sudo sh backup_mysql.sh
     sudo sh backup_apache.sh
 
-# ADD schedule to cronjob
+# ADD jobs to cron
 
     use crontab -e and chose wich editor do you want to edit and copy this
     
