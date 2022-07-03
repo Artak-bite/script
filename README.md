@@ -17,3 +17,17 @@ you can check links and connection with php to mysql using "localhost" and "loca
     sudo sh blockconnec.sh "It is block connections"
     sudo sh backup_mysql.sh
     sudo sh backup_apache.sh
+
+# ADD schedule to cronjob
+
+    use crontab -e and chose wich editor do you want to edit and copy this
+    
+     ┌───────────── minute (0 - 59)
+     │     ┌───────────── hour (0 - 23)
+     │     │     ┌───────────── day of the month (1 - 31)
+     │     │     │   ┌───────────── month (1 - 12)
+     │     │     │   │   ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+     │     │     │   │   │                                   7 is also Sunday on some systems)
+     │     │     │   │   │
+     0     */6   *   *   *     ~/backup_apache.sh
+     0     *     *   *   *     ~/backup_mysql.sh
