@@ -11,7 +11,7 @@
     sudo sh script.sh "Install required programs"
     sudo sh mysql.sh "Create root password and DB"
     
-you can check links and connection with php to mysql using "localhost" and "localhost/adminer" 'login and password you can see in the script.sh'
+you can check links and connection with php to mysql using "localhost" and "localhost/adminer" 'login - root , password - mypass'
     
     sudo sh changessh.sh "It is change ssh port"
     sudo sh blockconnec.sh "It is block connections"
