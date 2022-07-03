@@ -8,6 +8,7 @@
 # Solution
 In the beggining run "sudo chmod +x *.sh"
 then run
+
     sudo sh script.sh "Install required programs"
     sudo sh mysql.sh "Create root password and DB"
     
