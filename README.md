@@ -7,6 +7,7 @@
 
 # Solution
 ## In the beggining run "sudo chmod +x *.sh"
+## NOTE. MySql password is hardcoded. Please consider changing the file before running the script.
 
     sudo sh script.sh "Install required programs"
     sudo sh mysql.sh "Create root password and DB"
@@ -18,7 +19,7 @@ you can check links and connection with php to mysql using "localhost" and "loca
     sudo sh backup_mysql.sh
     sudo sh backup_apache.sh
 
-# ADD jobs to cron
+## ADD jobs to cron
 
     use crontab -e and chose wich editor do you want to edit and copy this
     
