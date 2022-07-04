@@ -7,9 +7,9 @@
 
 # Solution
 ## In the beggining run "sudo chmod +x *.sh"
-## NOTE. MySql password is hardcoded. Please consider changing the file before running the script.
+### NOTE. MySql password is hardcoded. Please consider changing the file before running the script.
 
-    sudo sh script.sh "Install required programs"
+    sudo sh install.sh "Install required programs"
     sudo sh mysql.sh "Create root password and DB"
     
 you can check links and connection with php to mysql using "localhost" and "localhost/adminer" 'login - root , password - mypass'
