@@ -39,13 +39,14 @@ for file in $( find $SOURCE -printf "%P\n" ); do
     else
 	echo
         echo '-------------------------------------------------------'
-        echo '--------------- $file is copying $DEST ----------------'
+        echo '-------------- `$file is copying $DEST` ---------------'
         echo '-------------------------------------------------------'
         echo
        cp -r $SOURCE/$file $DEST/$file
     fi
 done
 
+gzip $DEST/*.*
 #touch /etc/crontab && chmod 644 /etc/crontab
 #echo "1 * * * *  tar -zcf /var/apache_backups/'$(date '+\%m-\%d-\%y').tar.gz' /var/www/html/" >> /var/spool/cron/root
 
