@@ -53,11 +53,13 @@ FILE2=/var/www/html/index.php
 
 if [ -f "$FILE1" ]; then
    rm -r $FILE1
-else
-   continue;
+#else
+#   continue;
 fi
 
-chown -R $USER:$USER /etc/apache2/
+# If need change permissions use this comand
+# chown -R $USER:$USER /etc/apache2/
+
 if [ -f $FILE2 ]; then
     if [ index.php -nt "$FILE2" ]; then
 	echo "-------------------------------------------------------"

@@ -50,4 +50,4 @@ done
 #echo "1 * * * *  tar -zcf /var/apache_backups/'$(date '+\%m-\%d-\%y').tar.gz' /var/www/html/" >> /var/spool/cron/root
 
 # Checking file older than 10 days if yes then delete
-find $DEST/* -mtime +10 -exec rm {} \;
+find $DEST/* -mtime +10 -exec rm -r {} \;
