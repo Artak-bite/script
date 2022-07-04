@@ -6,7 +6,7 @@
 5. Backup mysql once per hour and should keep backups for last 10 days
 
 # Solution
-# In the beggining run "sudo chmod +x *.sh"
+## In the beggining run "sudo chmod +x *.sh"
 
     sudo sh script.sh "Install required programs"
     sudo sh mysql.sh "Create root password and DB"
