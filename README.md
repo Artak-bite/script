@@ -28,7 +28,7 @@ And backups files
 
 ## ADD jobs to cron
 
-    use crontab -e and chose wich editor do you want to edit and copy this
+use "crontab -e" comand and chose wich editor do you want to edit and copy this
     
      ┌───────────── minute (0 - 59)
      │     ┌───────────── hour (0 - 23)
