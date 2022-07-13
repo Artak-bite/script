@@ -9,17 +9,17 @@
 ## In the beggining run "sudo chmod +x *.sh"
 ### NOTE. MySql password is hardcoded. Please consider changing the file before running the script.
 
-Install required programs
-Create root password and DB
+Install required programs  
+Create MySql root password and DB
 
     sudo sh install.sh
     sudo sh mysql.sh
     
 you can check links and connection with php to mysql using "localhost" and "localhost/adminer" 'login - root , password - mypass'
 
-It is change ssh port
-It is block connections
-And backups files
+It is change ssh port  
+It is block connections  
+And backup files
 
     sudo sh changessh.sh
     sudo sh blockconnec.sh
