@@ -25,7 +25,6 @@
 
     <?php
         if (isset($_POST['submit_mysql'])) {
-
            $servername = "127.0.0.1";
            $database = "DB";
            $username = "root";
@@ -38,17 +37,26 @@
            echo 'Successfully connected to MYSQL' ;
         }
 
-	if (isset($_POST['submit_redis'])) {
 
-	}
+        if (isset($_POST['submit_redis'])) {
+           $redis = new Redis();
 
-	if (isset($_POST['submit_elastic'])) {
+           // Connecting to Redis
+           $redis->connect('127.0.0.1', 6379);
+           // $redis->auth('password');
 
-	}
+           if ($redis->ping()) {
+             echo "PONG";
+           }
+        }
+
+
+        if (isset($_POST['submit_elastic'])) {
+
+	      }
     ?>
 
 
   </div>
 </body>
 </html>
-

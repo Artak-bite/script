@@ -16,11 +16,14 @@ apt update
 # Installing apache web server
 apt install apache2 -y
 
+# Installing redis
+apt install redis -y
+
 # Installing mysql db
 apt install mysql-server mysql-client -y
 
 # Installing php and moduls
-apt install php-pear php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php -y
+apt install php-pear php-dev php-redis php-zip pkg-php-tools php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php -y
 
 # Install adminer
 apt install adminer -y
@@ -29,6 +32,7 @@ a2enconf adminer.conf
 # Restarting services
 systemctl restart apache2
 systemctl restart mysql.service
+systemctl restart redis-server
 
 # Enable services
 systemctl enable apache2
@@ -41,6 +45,7 @@ echo '----------- Checking status of the services -----------'
 echo '-------------------------------------------------------'
 echo Apache service is $(systemctl show -p ActiveState --value apache2)
 echo MySql service is $(systemctl show -p ActiveState --value mysql)
+echo Redis service is $(systemctl show -p ActiveState --value redis)
 # New line
 echo
 
