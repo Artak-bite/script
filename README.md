@@ -17,9 +17,9 @@ Create MySql root password and DB
     
 you can check links and connection with php to mysql using "localhost" and "localhost/adminer" 'login - root , password - mypass'
 
-It is change ssh port  
-It is block connections  
-And backup files
+First is going to change ssh port  
+Second is going to block connections  
+And finally backup the necessary files(folders)
 
     sudo sh changessh.sh
     sudo sh blockconnec.sh
@@ -30,12 +30,12 @@ And backup files
 
 use "crontab -e" comand and chose wich editor do you want to edit and copy this
     
-     ┌───────────── minute (0 - 59)
-     │     ┌───────────── hour (0 - 23)
-     │     │     ┌───────────── day of the month (1 - 31)
-     │     │     │   ┌───────────── month (1 - 12)
-     │     │     │   │   ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
-     │     │     │   │   │                                   7 is also Sunday on some systems)
-     │     │     │   │   │
-     0     */6   *   *   *     ~/backup_apache.sh
-     0     *     *   *   *     ~/backup_mysql.sh
+     #┌───────────── minute (0 - 59)
+     #│     ┌───────────── hour (0 - 23)
+     #│     │     ┌───────────── day of the month (1 - 31)
+     #│     │     │   ┌───────────── month (1 - 12)
+     #│     │     │   │   ┌───────────── day of the week (0 - 6) (Sunday to Saturday;
+     #│     │     │   │   │                                   7 is also Sunday on some systems)
+     #│     │     │   │   │
+      0     */6   *   *   *     ~/backup_apache.sh
+      0     *     *   *   *     ~/backup_mysql.sh
